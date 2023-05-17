@@ -1,5 +1,5 @@
 # Computer_Vision
-- Implement the algorithms without using build-in OpenCV package
+- Implement the algorithms without using built-in OpenCV package
 # CV_hw1 
 Gaussian Blur, Sobel Operator, Harris Corner Detection, SIFT
 
