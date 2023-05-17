@@ -1,11 +1,11 @@
-# Computer_Vision
+# Computer Vision
 - Implement the algorithms without using built-in OpenCV package
-# CV_hw1 
+# 1 
 Gaussian Blur, Sobel Operator, Harris Corner Detection, SIFT
 
-# CV_hw2
+# 2
 Epipolar Geometry, Eight-point algorithm, Normalized eight-point algorithm, Fundamental matrix, Rank-2 Constraint, 
 Homography, Image Rectification
 
-# CV_hw3
+# 3
 Image Alignment, RANSAC, SIFT, Image Segmentation, K-means, K-means++
