@@ -24,11 +24,11 @@ def plot_rgb_original(data, bandwidth, output_folder, output_name):
     ax.set_zlabel('Z label: Blue')
     # plt.savefig(f"./output/{output_folder}/2C_rgb_Original_{output_name}.jpg", dpi = 300)
 
-def plot_rgb_distribution(data, iteration, bandwidth, output_folder, output_name):
+def plot_rgb_distribution(data, color_data, iteration, bandwidth, output_folder, output_name):
     fig = plt.figure()
     ax = plt.axes(projection = '3d')
     np.unique(data, axis=0)
-    ax.scatter3D(data[:,0], data[:,1], data[:,2], c = data/255)
+    ax.scatter3D(data[:,0], data[:,1], data[:,2], c = color_data/255)
     ax.set_xlabel('X label: Red')
     ax.set_ylabel('Y label: Green')
     ax.set_zlabel('Z label: Blue')
@@ -252,7 +252,7 @@ def uniform_mean_shift_3d(path, bandwidth, converge_count, output_folder, output
     #print("output datavector: ",output_datavector.shape)
     output = output_datavector.reshape(data.shape).astype(np.float32)
 
-    plot_rgb_distribution(output_datavector, iteration_str, bandwidth, output_folder, output_name)
+    plot_rgb_distribution(dataVector, output_datavector, iteration_str, bandwidth, output_folder, output_name)
     
     # cv2.imwrite(f"./output/{output_folder}/2C_3d_{output_name}_it{iteration_str}_band{bandwidth_str}.jpg", output)
 
