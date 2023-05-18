@@ -1,5 +1,4 @@
-# CV_hw1 
-Gaussian Blur, Sobel Operator, Harris Corner Detection, SIFT
+## Gaussian Blur, Sobel Operator, Harris Corner Detection, SIFT
 # Part 1
 ## HW1-1.py
 - A. Corner Detection:
