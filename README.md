@@ -8,4 +8,4 @@ Epipolar Geometry, Eight-point algorithm, Normalized eight-point algorithm, Fund
 Homography, Image Rectification
 
 # 3
-Image Alignment, RANSAC, SIFT, Image Segmentation, K-means, K-means++
+Image Alignment, RANSAC, SIFT, Image Segmentation, K-means, K-means++, Mean-shift
