@@ -1,7 +1,5 @@
-# CV_hw2
-Computer Vision course in NTHU
-Epipolar Geometry, Eight-point algorithm, Normalized eight-point algorithm, Fundamental matrix, Rank-2 Constraint, 
-Homography, Image Rectification
+## Epipolar Geometry, Eight-point algorithm, Normalized eight-point algorithm, Fundamental matrix, Rank-2 Constraint, Homography, Image Rectification
+
 # Part 1
 ## HW2-1.py
 ## Fundamental Matrix Estimation from Point Correspondences: 
