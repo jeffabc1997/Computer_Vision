@@ -46,3 +46,6 @@ return `k_means_Plus`要用的centers
 2. 將所有data point去和cluster centroid的rgb相減後square再sum，得到該centroid和所有data point的距離
 3. 利用threshold得到認定為比較近的點後取mean，將該centroid設為mean值後，再做步驟2，直到centroid不會再變動為止
 4. output_datavector則是記錄要畫在圖檔上的總data point，兩個相鄰點會是一樣的色彩(因為步驟1)
+
+## d.
+`uniform_mean_shift_5d`和(c)差別在於把長、寬、rgb都設成0~1之間，在步驟2的時候才不會有太大的差異
