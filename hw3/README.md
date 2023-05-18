@@ -1,5 +1,5 @@
-# CV_hw3
 Image Alignment, RANSAC, SIFT, Image Segmentation, K-means, K-means++, Computer Vision
+
 # Part 1. Image Alignment with RANSAC
 ## HW3-1.py
 - A. (25%) Use OpenCV function or publicly available program(such as the one from http://www.vlfeat.org/) for SIFT interest point detection to extract the SIFT feature points from the above 4 images. Establish point correspondences between the SIFT feature points detected from the single-book images and the cluttered-book image by using the distance between the SIFT feature vectors as the matching score. Show your best point correspondence results with different distance thresholds (the number of correspondences should be larger than 500).
@@ -37,3 +37,13 @@ Image Alignment, RANSAC, SIFT, Image Segmentation, K-means, K-means++, Computer 
 2. 將所有data與現存的所有centroid算距離，用`random.choices()`裡面的weight去做權重選取下一個centroid
 3. 選到直到k個centroid為止
 return `k_means_Plus`要用的centers
+
+## c.
+`uniform_mean_shift_3d`
+1. 只讀image一半的data point以減少運算時間
+2. 將所有data point去和cluster centroid的rgb相減後square再sum，得到該centroid和所有data point的距離
+3. 利用threshold得到認定為比較近的點後取mean，將該centroid設為mean值後，再做步驟2，直到centroid不會再變動為止
+4. output_datavector則是記錄要畫在圖檔上的總data point，兩個相鄰點會是一樣的色彩(因為步驟1)
+
+## d.
+`uniform_mean_shift_5d`和(c)差別在於把長、寬、rgb都設成0~1之間，在步驟2的時候才不會有太大的差異
