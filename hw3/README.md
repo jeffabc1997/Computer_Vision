@@ -20,6 +20,7 @@
 ## HW3-2.py
 - A. (10 pts) Apply K-means on the image (RGB color space) and try it with three different K values (your K should be > 3) and show the results (3 images). You should use 50 random initial guesses to select the best result based on the objective function for each K. Please discuss the difference between the results for different K’s.
 - B. (10 pts) Implement K-means++ to have better initial guess (3 images). Please discuss the difference between (A) and (B).
+- C. (10 pts) Implement the mean-shift algorithm to segment the same colors in the target image. Select appropriate parameters in the Uniform Kernel on the RGB color space to achieve optimal image segmentation (show the clustered result), and then show the pixel distributions in the R*G*B feature space before and after applying mean-shift (see Unit7 p.31). (3 images)
 
 ## a.
 
@@ -44,6 +45,3 @@ return `k_means_Plus`要用的centers
 2. 將所有data point去和cluster centroid的rgb相減後square再sum，得到該centroid和所有data point的距離
 3. 利用threshold得到認定為比較近的點後取mean，將該centroid設為mean值後，再做步驟2，直到centroid不會再變動為止
 4. output_datavector則是記錄要畫在圖檔上的總data point，兩個相鄰點會是一樣的色彩(因為步驟1)
-
-## d.
-`uniform_mean_shift_5d`和(c)差別在於把長、寬、rgb都設成0~1之間，在步驟2的時候才不會有太大的差異
