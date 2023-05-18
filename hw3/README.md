@@ -1,4 +1,4 @@
-Image Alignment, RANSAC, SIFT, Image Segmentation, K-means, K-means++, Computer Vision
+## Image Alignment, RANSAC, SIFT, Image Segmentation, K-means, K-means++, Computer Vision
 
 # Part 1. Image Alignment with RANSAC
 ## HW3-1.py
